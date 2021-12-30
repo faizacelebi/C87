@@ -1,5 +1,4 @@
 
-// Create canvas variable
 var canvas = new fabric.canvas('myCanvas');
  block_y=1;
  block_x=1;
@@ -11,7 +10,7 @@ var block_image_object= "";
 
 function new_image(get_image)
 {
-	// to upload images
+	
 	fabric.Image.fromURL(get_image, function(Img){
 		block_image_object = Img;
 
@@ -32,10 +31,8 @@ function my_keydown(e)
 keyPressed = e.keyCode;
 console.log(keyPressed);
 
-	if(keyPressed == '82') // add appropriate keycode
+	if(keyPressed == '82') 
 	{
-		// upload red ranger
-		block_x = 250;
 		new_image('rr1.png');
 		console.log("r");
 	}
@@ -44,7 +41,7 @@ console.log(keyPressed);
 		block_x = 200;
 		new_image('gr.png');
 		console.log("g");
-		// upload green ranger
+		
 	}
 	
 	if(keyPressed == '89')
@@ -52,14 +49,14 @@ console.log(keyPressed);
 		block_x =350;
 		new_image('yr.png');
 		console.log("y");
-		// upload yellow ranger
+		
 	}
 	if(keyPressed == '80')
 	{
 		block_x = 600;
 		new_image('pr.png');
 		console.log("p");
-		// upload pink ranger
+		
 	}
 	if(keyPressed == '66')
 	{
@@ -67,7 +64,6 @@ console.log(keyPressed);
 		new_image('br.png');
 		console.log("p");
 
-	// upload blue ranger
 	}
 	
 }
